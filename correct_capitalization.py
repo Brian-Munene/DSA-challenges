@@ -1,4 +1,14 @@
 def correct_capitalization(word: str = None)-> bool:
+    """
+    Given a string, return whether or not it uses capitalization correctly. A string correctly uses capitalization if all letters are capitalized, no letters are capitalized, or only the first letter is capitalized.
+
+    Example: Given the following strings...
+
+    "USA", return true
+    "Calvin", return true
+    "compUter", return false
+    "coding", return true
+    """
     assert word != None, 'Word cannot be none'
     if word != '':
         if word.isupper():

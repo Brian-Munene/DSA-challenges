@@ -3,7 +3,7 @@ def intersection_of_numbers(nums1: list, nums2: list)-> list:
     Given two integer arrays, return their intersection. 
     Note: the intersection is the set of elements that are common to both arrays.
 
-    Ex: Given the following arrays...
+    Example: Given the following arrays...
 
     nums1 = [2, 4, 4, 2], nums2 = [2, 4], return [2, 4]
     nums1 = [1, 2, 3, 3], nums2 = [3, 3], return [3]

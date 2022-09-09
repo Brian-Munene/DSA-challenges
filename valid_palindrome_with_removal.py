@@ -1,7 +1,13 @@
 def validPalindromeWithRemoval(word: str=None):
     """
-    Given a string and the ability to delete at most one character, 
-    return whether or not it can form a palindrome. 
+    Given a string and the ability to delete at most one character, return whether or not it can form a palindrome. 
+    Note: a palindrome is a sequence of characters that reads the same forwards and backwards. 
+
+    Example: Given the following strings...
+
+    "abcba", return true
+    "foobof", return true (remove the first 'o', the second 'o', or 'b')
+    "abccab", return false
     """
     if word == "": return True
 
@@ -16,7 +22,7 @@ def validPalindromeWithRemoval(word: str=None):
             chars.pop(r)
             r -=1
             removed.append(chars[r])
-    print(removed)
+
     if len(removed) == 1:
         return f"{True} (remove {removed[0]})"
     if len(removed) > 1:
